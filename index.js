@@ -5,7 +5,6 @@ const app = new Koa()
 
 app.use((req, res) => {
   console.log('中间价1正在执行');
-  res.end('lalala', () => console.log('response end'))
 })
 
 app.use((req, res) => {

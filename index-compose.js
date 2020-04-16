@@ -10,8 +10,8 @@ app.use((req, res, next) => {
 
 app.use((req, res, next) => {
   console.log('中间价2正在执行');
-  res.end('lalala', () => console.log('response end'))
   next();
+  res.end('lalala', () => console.log('response end'))
 })
 
 const port = 3333;
